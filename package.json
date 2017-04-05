@@ -1,0 +1,19 @@
+{
+  "name": "doraemon",
+  "version": "1.0.0",
+  "description": "A bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thyrlian/Doraemon.git"
+  },
+  "author": "Jing Li",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thyrlian/Doraemon/issues"
+  },
+  "homepage": "https://github.com/thyrlian/Doraemon#readme"
+}
