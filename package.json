@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/thyrlian/Doraemon#readme",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "express-winston": "^2.3.0",
+    "winston": "^2.3.1"
   }
 }
