@@ -1,15 +1,16 @@
 var express = require('express');
 var app = express();
+var router = express.Router();
 var port = process.env.PORT || 3000;
 
-requireAllFilesInDir('api');
+requireRoutingFilesInDir('api');
 
 app.listen(port);
 
-function requireAllFilesInDir (dir) {
+function requireRoutingFilesInDir (dir) {
   require('fs').readdirSync(dir).forEach(function (file) {
     if (/.*\.js/.test(file)) {
-      require('./' + dir + '/' + file)(app);
+      app.use('/', require('./' + dir + '/' + file)(router));
     }
   });
 }
